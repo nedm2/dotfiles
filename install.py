@@ -20,7 +20,7 @@ def mkdir(dirname):
 def getInstallList():
     install_list_file = os.path.join(srcdir, "install_list.txt")
     with open(install_list_file, "r") as f:
-        install_list = [x.strip('\n') for x in f.readlines()]
+        install_list = [x.strip('\n') for x in f.readlines() if x.strip('\n')]
     return install_list
 
 def getTimestamp():
