@@ -1,0 +1,2 @@
+https://github.com/chrissicool/zsh-256color
+https://github.com/zsh-users/zsh-autosuggestions
