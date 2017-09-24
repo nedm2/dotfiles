@@ -1,0 +1,4 @@
+### vim ###
+
+]p      # Paste with corrected indentation
+
