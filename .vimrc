@@ -22,6 +22,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'moll/vim-bbye'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'osyo-manga/vim-anzu'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -157,3 +158,9 @@ set clipboard=unnamedplus
 if filereadable(expand("$HOME/.vimrc.local"))
     source $HOME/.vimrc.local
 endif
+
+" Configure vim-anzu
+nmap n <Plug>(anzu-n-with-echo)
+nmap N <Plug>(anzu-N-with-echo)
+nmap * <Plug>(anzu-star-with-echo)
+nmap # <Plug>(anzu-sharp-with-echo)
