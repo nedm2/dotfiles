@@ -37,14 +37,17 @@ install_list = getInstallList()
 for target in install_list:
     src_path    = os.path.join(srcdir, target)
     target_path = os.path.join(homedir, target)
-    if os.path.islink(target_path):
-        os.unlink(target_path)
-    elif os.path.isfile(target_path):
-        mkdir(bkupdir)
-        bkup_path = os.path.join(bkupdir, getBackupFilename(target))
-        print("Archiving {} --> {}".format(target_path, bkup_path))
-        shutil.move(target_path, bkup_path)
 
-    print("Linking {} --> {}".format(target_path, src_path))
-    os.symlink(src_path, target_path)
+    if os.path.isfile(src_path):
+        if os.path.islink(target_path):
+            os.unlink(target_path)
+        elif os.path.isfile(target_path):
+            mkdir(bkupdir)
+            bkup_path = os.path.join(bkupdir, getBackupFilename(target))
+            print("Archiving {} --> {}".format(target_path, bkup_path))
+            shutil.move(target_path, bkup_path)
+        print("Linking {} --> {}".format(target_path, src_path))
+        os.symlink(src_path, target_path)
+    else:
+        print("{} does not exist".format(src_path))
 
