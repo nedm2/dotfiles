@@ -153,3 +153,7 @@ command Nooverlen call OverLenOff()
 
 "Always copy/paste to/from system clipboard
 set clipboard=unnamedplus
+
+if filereadable(expand("$HOME/.vimrc.local"))
+    source $HOME/.vimrc.local
+endif
