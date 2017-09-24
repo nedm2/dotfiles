@@ -96,7 +96,21 @@ function precmd() {
   fi
 }
 
-PROMPT='${ret_status} %{$fg[cyan]%}%4~%{$reset_color%} $(git_prompt_info)'
+# Begin a segment
+# Takes two arguments, background and foreground. Both can be omitted,
+# rendering default background/foreground.
+prompt_segment() {
+  local fg
+  [[ -n $1 ]] && fg="%F{$1}" || fg="%f"
+  echo -n "%{$fg%}"
+  [[ -n $2 ]] && echo -n $2
+}
+
+prompt_dir() {
+  prompt_segment green "%$(( $COLUMNS - 60 ))<...<%~%<<"
+}
+
+PROMPT='${ret_status}%{$fg[cyan]%}$(prompt_dir)%{$reset_color%} $(git_prompt_info)'
 
 # Vi mode
 bindkey -v
@@ -123,4 +137,3 @@ export KEYTIMEOUT=40
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
-
