@@ -91,7 +91,7 @@ function preexec() {
 function precmd() {
   if [ $timer ]; then
     timer_show=$(($SECONDS - $timer))
-    exectime_prompt="%F{cyan}${timer_show}s %{$reset_color%}"
+    exectime_prompt="%{$fg[cyan]%}${timer_show}s %{$reset_color%}"
     unset timer
   fi
 }
@@ -129,7 +129,7 @@ bindkey jk vi-cmd-mode
 
 function zle-line-init zle-keymap-select {
     VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} ${exectime_prompt}$EPS1"
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} ${exectime_prompt}"
     zle reset-prompt
 }
 
