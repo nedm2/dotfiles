@@ -24,6 +24,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'osyo-manga/vim-anzu'
 Plugin 'jaxbot/selective-undo.vim'
+Plugin 'chrisbra/csv.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
