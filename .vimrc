@@ -26,6 +26,7 @@ Plugin 'osyo-manga/vim-anzu'
 Plugin 'jaxbot/selective-undo.vim'
 Plugin 'chrisbra/csv.vim'
 Plugin 'kopischke/vim-fetch'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -167,3 +168,6 @@ nmap n <Plug>(anzu-n-with-echo)
 nmap N <Plug>(anzu-N-with-echo)
 nmap * <Plug>(anzu-star-with-echo)
 nmap # <Plug>(anzu-sharp-with-echo)
+
+" Configure ycm
+highlight YcmErrorSection ctermbg=white ctermfg=red
