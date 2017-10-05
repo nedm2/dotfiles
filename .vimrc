@@ -25,6 +25,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'osyo-manga/vim-anzu'
 Plugin 'jaxbot/selective-undo.vim'
 Plugin 'chrisbra/csv.vim'
+Plugin 'kopischke/vim-fetch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
