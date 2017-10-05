@@ -141,3 +141,5 @@ export KEYTIMEOUT=40
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+
+alias xclip='xclip -selection c'
