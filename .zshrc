@@ -149,3 +149,5 @@ if [ "$(uname 2> /dev/null)" = "Darwin" ]; then
     alias ctags="`brew --prefix`/bin/ctags"
     export EDITOR=/usr/local/bin/vim
 fi
+
+bindkey '^ ' autosuggest-accept
