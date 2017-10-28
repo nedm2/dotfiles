@@ -1,3 +1,4 @@
 [alias]
     st = status
     co = checkout
+    pd = rev-parse --show-toplevel
