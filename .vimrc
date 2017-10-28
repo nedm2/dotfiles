@@ -193,3 +193,6 @@ function! LoadCscope()
   endif
 endfunction
 au BufEnter /* call LoadCscope()
+
+" Use comma as leader
+let mapleader=","
