@@ -1,7 +1,7 @@
 [init]
-	templatedir = ~/.dotfiles/.git_template
+    templatedir = ~/.dotfiles/.git_template
 [alias]
-	ctags = !.git/hooks/ctags
+    ctags = !.git/hooks/ctags
 [alias]
     st = status
     co = checkout
