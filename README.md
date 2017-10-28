@@ -11,3 +11,7 @@
     make
     sudo make install
 
+## Inlcude gitconfig
+
+    [include]
+        path = .dotfiles/.gitconfig
