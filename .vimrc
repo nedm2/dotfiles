@@ -176,7 +176,6 @@ highlight YcmErrorSection ctermbg=white ctermfg=red
 " cscope find callers
 function! Csc()
   cscope find c <cword>
-  copen
 endfunction
 command! Csc call Csc()
 
