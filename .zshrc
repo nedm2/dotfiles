@@ -143,3 +143,9 @@ zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 alias xclip='xclip -selection c'
+
+# Mac specific
+if [ "$(uname 2> /dev/null)" = "Darwin" ]; then
+    alias ctags="`brew --prefix`/bin/ctags"
+    export EDITOR=/usr/local/bin/vim
+fi
