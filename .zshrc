@@ -151,3 +151,5 @@ if [ "$(uname 2> /dev/null)" = "Darwin" ]; then
 fi
 
 bindkey '^ ' autosuggest-accept
+
+setopt no_share_history
