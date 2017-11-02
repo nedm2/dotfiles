@@ -28,6 +28,7 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'kopischke/vim-fetch'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jonbri/vim-flash'
+Plugin 'lyuts/vim-rtags'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
