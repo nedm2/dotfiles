@@ -197,3 +197,6 @@ au BufEnter /* call LoadCscope()
 
 " Use comma as leader
 let mapleader=","
+
+"ycm shortcuts
+nnoremap Yt :YcmCompleter GoTo<CR>
