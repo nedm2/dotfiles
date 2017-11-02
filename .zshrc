@@ -84,6 +84,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# Source local config file
+source .zshrc.local
+
 function preexec() {
   timer=${timer:-$SECONDS}
 }
