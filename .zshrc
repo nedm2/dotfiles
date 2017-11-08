@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 #
 
 # Source local config file
-source .zshrc.local
+source $HOME/.zshrc.local
 
 function preexec() {
   timer=${timer:-$SECONDS}
