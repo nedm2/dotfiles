@@ -87,6 +87,8 @@ set nowrap
 
 "jk esc and friends
 imap jk <Esc>
+imap Jk <Esc>
+imap JK <Esc>
 nnoremap ; :
 
 "Smoother scrolling
