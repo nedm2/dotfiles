@@ -159,3 +159,5 @@ bindkey '^ ' autosuggest-accept
 setopt no_share_history
 
 alias sshpass='nocorrect sshpass'
+
+alias tvim='tmux new vim'

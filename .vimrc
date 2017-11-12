@@ -29,6 +29,7 @@ Plugin 'kopischke/vim-fetch'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jonbri/vim-flash'
 Plugin 'lyuts/vim-rtags'
+Plugin 'tpope/vim-dispatch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -204,3 +205,6 @@ nmap - ,rb
 
 "ycm shortcuts
 nnoremap Yt :YcmCompleter GoTo<CR>
+
+" quick build
+nnoremap <Leader>m :Make<CR>
