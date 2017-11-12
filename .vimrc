@@ -208,5 +208,8 @@ nmap - ,rb
 "ycm shortcuts
 nnoremap Yt :YcmCompleter GoTo<CR>
 
+set exrc
+set secure
+
 " quick build
 nnoremap <Leader>m :Make<CR>
