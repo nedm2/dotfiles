@@ -30,6 +30,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'jonbri/vim-flash'
 Plugin 'lyuts/vim-rtags'
 Plugin 'tpope/vim-dispatch'
+Plugin 'skywind3000/asyncrun.vim'
 Plugin 'rhysd/vim-clang-format'
 
 " All of your Plugins must be added before the following line
@@ -121,6 +122,7 @@ map <silent> <C-n> :NERDTreeFocus<CR>
 nnoremap ;; :!
 nnoremap ;' :<C-F>
 nnoremap /' /<C-F>
+nnoremap // :AsyncRun grep -rn  * <left><left><left>
 
 " Search and replace under cursor
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
