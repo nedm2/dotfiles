@@ -161,3 +161,6 @@ setopt no_share_history
 alias sshpass='nocorrect sshpass'
 
 alias tvim='tmux new vim'
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
