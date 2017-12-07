@@ -166,7 +166,7 @@ command Overlen call OverLenOn()
 command Nooverlen call OverLenOff()
 
 "Always copy/paste to/from system clipboard
-set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
 
 if filereadable(expand("$HOME/.vimrc.local"))
     source $HOME/.vimrc.local
