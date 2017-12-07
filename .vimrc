@@ -221,3 +221,6 @@ let g:ycm_always_populate_location_list = 1
 nnoremap <Leader>m :Make<CR>
 
 set mouse=a
+
+" Synchronize with system clipboard on exit
+autocmd VimLeave * call system("xsel -ib", getreg('+'))
