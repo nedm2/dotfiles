@@ -207,3 +207,6 @@ autocmd VimLeave * call system("xsel -ib", getreg('+'))
 
 " Nicer J behaviour
 set formatoptions+=j
+
+" Highlight trailing whitespace
+match ErrorMsg '\s\+$'
