@@ -221,3 +221,6 @@ let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
 let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is configured incorrectly
 
 set encoding=utf-8
+
+" Reduce updatetime for quicker responsiveness
+set updatetime=1000
