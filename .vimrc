@@ -37,7 +37,12 @@ Plugin 'vim-scripts/Conque-GDB'
 Plugin 'junegunn/fzf.vim'
 
 " Set path for fzf
-set rtp+=/usr/local/opt/fzf
+if executable('/usr/local/opt/fzf')
+    set rtp+=/usr/local/opt/fzf
+elseif executable($HOME . '/.fzf/bin/fzf')
+    set rtp+=~/.fzf
+endif
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
