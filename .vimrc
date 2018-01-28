@@ -120,6 +120,7 @@ set showmode
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 " get rid of a few keystrokes for common command line tasks
+nnoremap ;;; :AsyncRun<space>
 nnoremap ;; :!
 nnoremap ;' :<C-F>
 nnoremap /' /<C-F>
