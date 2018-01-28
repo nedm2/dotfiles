@@ -211,3 +211,5 @@ set formatoptions+=j
 
 " Highlight trailing whitespace
 match ErrorMsg '\s\+$'
+
+set encoding=utf-8
