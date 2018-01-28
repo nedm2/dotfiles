@@ -129,7 +129,12 @@ nnoremap ;;; :AsyncRun<space>
 nnoremap ;; :!
 nnoremap ;' :<C-F>
 nnoremap /' /<C-F>
-nnoremap // :AsyncRun grep -rn  * <left><left><left>
+
+if executable('rg')
+    nnoremap // :AsyncRun rg -n<space>
+else
+    nnoremap // :AsyncRun grep -rn  * <left><left><left>
+endif
 
 " Search and replace under cursor
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
