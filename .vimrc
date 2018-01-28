@@ -33,6 +33,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'skywind3000/asyncrun.vim'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'vim-scripts/Conque-GDB'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -214,5 +215,9 @@ match ErrorMsg '\s\+$'
 
 let g:ctrlp_prompt_mappings = { 'MarkToOpen()': [';'] }
 let g:ctrlp_open_multiple_files = '1'
+
+let g:ConqueTerm_Color = 2         " 1: strip color after 200 lines, 2: always with color
+let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
+let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is configured incorrectly
 
 set encoding=utf-8
