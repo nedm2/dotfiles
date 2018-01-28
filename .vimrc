@@ -233,3 +233,8 @@ set encoding=utf-8
 
 " Reduce updatetime for quicker responsiveness
 set updatetime=1000
+
+" Fuzzy line search in ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPLastMode'
+let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
