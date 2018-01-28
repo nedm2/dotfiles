@@ -37,7 +37,7 @@ Plugin 'vim-scripts/Conque-GDB'
 Plugin 'junegunn/fzf.vim'
 
 " Set path for fzf
-if executable('/usr/local/opt/fzf')
+if executable('/usr/local/bin/fzf')
     set rtp+=/usr/local/opt/fzf
 elseif executable($HOME . '/.fzf/bin/fzf')
     set rtp+=~/.fzf
