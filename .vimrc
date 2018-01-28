@@ -212,4 +212,7 @@ set formatoptions+=j
 " Highlight trailing whitespace
 match ErrorMsg '\s\+$'
 
+let g:ctrlp_prompt_mappings = { 'MarkToOpen()': [';'] }
+let g:ctrlp_open_multiple_files = '1'
+
 set encoding=utf-8
