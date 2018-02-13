@@ -142,9 +142,6 @@ else
     nnoremap // :AsyncRun grep -rn  * <left><left><left>
 endif
 
-" Search and replace under cursor
-:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
-
 " Window navigation
 nmap <silent> <C-a> <C-W>w
 
@@ -252,3 +249,6 @@ if executable('rg')
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
   let g:ctrlp_use_caching = 0
 endif
+
+" Search and replace under cursor
+nnoremap <Leader><Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/g<C-f>
