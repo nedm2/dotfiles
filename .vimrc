@@ -250,5 +250,10 @@ if executable('rg')
   let g:ctrlp_use_caching = 0
 endif
 
+command! -bang FLines call fzf#vim#grep(
+     \ 'grep -vnITr --color=always --exclude-dir=".svn" --exclude-dir=".git" --exclude=tags --exclude=*\.pyc --exclude=*\.exe --exclude=*\.dll --exclude=*\.zip --exclude=*\.gz "^$"', 
+     \ 0,  
+     \ {'options': '--reverse --prompt "FLines> "'})
+
 " Search and replace under cursor
 nnoremap <Leader><Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/g<C-f>
