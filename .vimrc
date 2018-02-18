@@ -257,3 +257,6 @@ command! -bang FLines call fzf#vim#grep(
 
 " Search and replace under cursor
 nnoremap <Leader><Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/g<C-f>
+
+" Use // style comments for vim-commnetary
+autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
