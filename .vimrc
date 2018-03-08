@@ -106,6 +106,7 @@ set nowrap
 imap jk <Esc>
 imap Jk <Esc>
 imap JK <Esc>
+imap j;k <Esc>
 nnoremap ; :
 
 "Smoother scrolling
