@@ -36,6 +36,9 @@ Plugin 'skywind3000/asyncrun.vim'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'vim-scripts/Conque-GDB'
 Plugin 'junegunn/fzf.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Bundle 'ervandew/supertab'
 
 " Set path for fzf
 if executable('/usr/local/bin/fzf')
@@ -260,3 +263,15 @@ nnoremap <Leader><Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/g<C-f>
 
 " Use // style comments for vim-commnetary
 autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
+
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
