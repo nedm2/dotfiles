@@ -215,9 +215,6 @@ set secure
 
 let g:ycm_always_populate_location_list = 1
 
-" quick build
-nnoremap <Leader>m :Make<CR>
-
 set mouse=a
 
 " Synchronize with system clipboard on exit
