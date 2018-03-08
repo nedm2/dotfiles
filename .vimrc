@@ -254,8 +254,8 @@ if executable('rg')
 endif
 
 command! -bang FLines call fzf#vim#grep(
-     \ 'grep -vnITr --color=always --exclude-dir=".svn" --exclude-dir=".git" --exclude=tags --exclude=*\.pyc --exclude=*\.exe --exclude=*\.dll --exclude=*\.zip --exclude=*\.gz "^$"', 
-     \ 0,  
+     \ 'rg -vn --glob="!.svn" --glob="!.git" --glob="!tags" --glob="!*\.pyc" --glob="!*\.exe" --glob="!*\.dll" --glob="!*\.zip" --glob="!*\.gz" "^$"',
+     \ 0,
      \ {'options': '--reverse --prompt "FLines> "'})
 
 " Search and replace under cursor
