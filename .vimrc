@@ -39,6 +39,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'jlanzarotta/bufexplorer'
 
 " Set path for fzf
 if executable('/usr/local/bin/fzf')
