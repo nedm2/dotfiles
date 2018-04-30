@@ -279,3 +279,6 @@ nnoremap <Leader>i :YcmCompleter GetDocImprecise<CR>
 
 " unimpaired style open for Tagbar
 nmap =ot :TagbarOpenAutoClose<CR>
+
+" Search case-insensitive by default
+set ignorecase
