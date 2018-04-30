@@ -205,7 +205,7 @@ highlight YcmErrorSection ctermbg=white ctermfg=red
 let mapleader=","
 
 " Nicer shortcut for rtags
-nmap = ,rj
+nmap + ,rj
 nmap - ,rb
 
 "ycm shortcuts
