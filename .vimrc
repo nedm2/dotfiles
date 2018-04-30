@@ -108,6 +108,7 @@ set nowrap
 imap jk <Esc>
 imap Jk <Esc>
 imap JK <Esc>
+imap j;k <Esc>
 nnoremap ; :
 
 "Smoother scrolling
@@ -215,9 +216,6 @@ set exrc
 set secure
 
 let g:ycm_always_populate_location_list = 1
-
-" quick build
-nnoremap <Leader>m :Make<CR>
 
 set mouse=a
 
