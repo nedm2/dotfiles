@@ -41,6 +41,7 @@ Plugin 'honza/vim-snippets'
 Bundle 'ervandew/supertab'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'majutsushi/tagbar'
 
 " Set path for fzf
 if executable('/usr/local/bin/fzf')
@@ -206,7 +207,7 @@ highlight YcmErrorSection ctermbg=white ctermfg=red
 let mapleader=","
 
 " Nicer shortcut for rtags
-nmap = ,rj
+nmap + ,rj
 nmap - ,rb
 
 "ycm shortcuts
@@ -275,3 +276,11 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+nnoremap <Leader>i :YcmCompleter GetDocImprecise<CR>
+
+" unimpaired style open for Tagbar
+nmap =ot :TagbarOpenAutoClose<CR>
+
+" Search case-insensitive by default
+set ignorecase
