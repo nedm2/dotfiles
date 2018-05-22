@@ -14,6 +14,7 @@
     lg  = !"git lg1"
     lga = !"git lg1a"
     meld = !/home/niall/software/git-meld/git-meld.pl
+    compare = log --left-only --graph --cherry-pick --oneline
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
