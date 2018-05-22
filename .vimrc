@@ -42,6 +42,7 @@ Bundle 'ervandew/supertab'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'majutsushi/tagbar'
+Plugin 'matze/vim-move'
 
 " Set path for fzf
 if executable('/usr/local/bin/fzf')
@@ -283,4 +284,21 @@ nnoremap <Leader>i :YcmCompleter GetDocImprecise<CR>
 nmap =ot :TagbarOpenAutoClose<CR>
 
 " Search case-insensitive by default
-set ignorecase
+nnoremap / /\c
+
+" nice left right scrolling
+map <C-L> 1zl" Scroll 1 characters to the right
+map <C-H> 1zh" Scroll 1 characters to the left
+
+let g:asyncrun_open = 8
+let g:asyncrun_trim = 1
+
+" Make alt work correctly
+let c='a'
+while c <= 'z'
+  exec "set <A-".c.">=\e".c
+  exec "imap \e".c." <A-".c.">"
+  let c = nr2char(1+char2nr(c))
+endw
+
+set ttimeout ttimeoutlen=50
