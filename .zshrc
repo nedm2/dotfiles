@@ -164,3 +164,5 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export TERM=screen-256color-bce
