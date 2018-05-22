@@ -22,3 +22,5 @@
 	clean = git-lfs clean -- %f
 [push]
 	default = simple
+[core]
+	pager = less -S
