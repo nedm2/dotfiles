@@ -263,6 +263,7 @@ nnoremap <Leader><Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/g<C-f>
 
 " Use // style comments for vim-commnetary
 autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
+autocmd FileType cmake setlocal commentstring=#\ %s
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
