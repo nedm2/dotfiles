@@ -202,6 +202,7 @@ nmap # <Plug>(anzu-sharp-with-echo)
 
 " Configure ycm
 highlight SpellBad cterm=underline ctermbg=black
+nnoremap Yf :YcmCompleter FixIt<CR>
 
 
 " Use comma as leader
