@@ -212,9 +212,6 @@ let mapleader=","
 nmap + ,rj
 nmap - ,rb
 
-"ycm shortcuts
-nnoremap Yt :YcmCompleter GoTo<CR>
-
 set exrc
 set secure
 
