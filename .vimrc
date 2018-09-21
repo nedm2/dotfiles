@@ -43,6 +43,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'majutsushi/tagbar'
 Plugin 'matze/vim-move'
+Plugin 'chriskempson/base16-vim'
 
 " Set path for fzf
 if executable('/usr/local/bin/fzf')
@@ -51,6 +52,7 @@ elseif executable($HOME . '/.fzf/bin/fzf')
     set rtp+=~/.fzf
 endif
 
+"colorscheme base16-default-dark
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
