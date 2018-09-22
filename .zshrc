@@ -165,4 +165,7 @@ export EDITOR="$VISUAL"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export TERM=screen-256color-bce
+export TERM=xterm-256color
+
+# Include tmux scripts on path
+export PATH=$PATH:$HOME/.dotfiles/tmux
