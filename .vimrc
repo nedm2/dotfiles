@@ -305,4 +305,4 @@ while c <= 'z'
   let c = nr2char(1+char2nr(c))
 endw
 
-set ttimeout ttimeoutlen=50
+set ttimeoutlen=0
