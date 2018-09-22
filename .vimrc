@@ -227,7 +227,7 @@ set formatoptions+=j
 match ErrorMsg '\s\+$'
 
 let g:ctrlp_prompt_mappings = { 'MarkToOpen()': [';'] }
-let g:ctrlp_open_multiple_files = '1'
+let g:ctrlp_open_multiple_files = '1i'
 
 let g:ConqueTerm_Color = 2         " 1: strip color after 200 lines, 2: always with color
 let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
@@ -240,8 +240,11 @@ set updatetime=1000
 
 " Fuzzy line search in ctrlp
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPLastMode'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
+
+" Use Ctrl-O to open CtrlP in buffer mode
+map <C-N> :CtrlPBuffer<CR>
 
 command! -bang Commits call fzf#vim#commits({'options': '--no-preview'}, <bang>0)
 
