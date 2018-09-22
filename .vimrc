@@ -17,10 +17,8 @@ Plugin 'EasyMotion'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
-"Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'moll/vim-bbye'
-"Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'osyo-manga/vim-anzu'
 "Plugin 'jaxbot/selective-undo.vim'
@@ -136,9 +134,6 @@ vnoremap <silent> <expr> p <sid>Repl()
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
-
-" easy open new tab
-map <silent> <C-n> :NERDTreeFocus<CR>
 
 " get rid of a few keystrokes for common command line tasks
 nnoremap ;;; :AsyncRun<space>
