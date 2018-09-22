@@ -214,6 +214,7 @@ set secure
 
 let g:ycm_always_populate_location_list = 1
 
+set ttymouse=xterm2
 set mouse=a
 
 " Synchronize with system clipboard on exit
