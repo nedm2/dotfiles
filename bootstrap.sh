@@ -5,4 +5,3 @@ git clone https://github.com/nedm2/dotfiles.git .dotfiles
 .dotfiles/install.py
 
 cd $HOME
-mkdir .z
