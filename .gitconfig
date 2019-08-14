@@ -17,6 +17,7 @@
     compare = log --left-only --graph --cherry-pick --oneline
     show-merges = "!f() { git log --merges --first-parent \"$1\"; }; f"
     show-merges-short = "!f() { git log --merges --first-parent --oneline \"$1\"; }; f"
+    contributors = "!f() { git ls-files | xargs -n1 git blame --line-porcelain | sed -n 's/^author //p' | sort -f | uniq -ic | sort -n; }; f"
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
