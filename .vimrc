@@ -306,3 +306,5 @@ while c <= 'z'
 endw
 
 set ttimeoutlen=0
+
+autocmd FileType c,cpp ClangFormatAutoEnable
