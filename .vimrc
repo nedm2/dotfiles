@@ -309,3 +309,7 @@ endw
 set ttimeoutlen=0
 
 autocmd FileType c,cpp ClangFormatAutoEnable
+
+" Scroll left right
+nnoremap L zl
+nnoremap H zh
