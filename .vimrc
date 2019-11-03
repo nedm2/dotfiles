@@ -313,3 +313,5 @@ autocmd FileType c,cpp ClangFormatAutoEnable
 " Scroll left right
 nnoremap L zl
 nnoremap H zh
+
+map <C-P> :Files<CR>
