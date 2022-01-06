@@ -215,7 +215,9 @@ set secure
 
 let g:ycm_always_populate_location_list = 1
 
-set ttymouse=xterm2
+if !has('nvim')
+    set ttymouse=xterm2
+endif
 set mouse=a
 
 " Synchronize with system clipboard on exit
@@ -299,12 +301,14 @@ let g:asyncrun_open = 8
 let g:asyncrun_trim = 1
 
 " Make alt work correctly
-let c='a'
-while c <= 'z'
-  exec "set <A-".c.">=\e".c
-  exec "imap \e".c." <A-".c.">"
-  let c = nr2char(1+char2nr(c))
-endw
+if !has('nvim')
+    let c='a'
+    while c <= 'z'
+      exec "set <A-".c.">=\e".c
+      exec "imap \e".c." <A-".c.">"
+      let c = nr2char(1+char2nr(c))
+    endw
+endif
 
 set ttimeoutlen=0
 
